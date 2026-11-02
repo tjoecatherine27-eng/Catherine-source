@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #fff8ef;
+    font-family: 'Comfortaa', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    color: #554c46;
+    border-bottom: 1px solid #eadfd3;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.topnav {
+    overflow: hidden;
+   background-color: white;
+   border-bottom: 1px solid #eadfd3;
+    display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-wrap: nowrap;
+}
+
+.topnav a {
+    display: block;
+   color: #554c46;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+   font-size: 14px;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   border-bottom: 3px solid transparent;
+   transition: 0.2s ease;
+}
+
+.topnav a:hover {
+   background-color: #f3edf6;
+   color: #765b84;
+   border-bottom-color: #a78ab4;
+}
+
+body{
+    background-image: url(bg.png);
+    background-size: cover;
+    
+}
+
+h2{
+    color:black;
+    background-color:rgb(255, 223, 196);
+    text-align: center;
+}
+
+h1{
+    color: black;
+    background-color: rgb(208, 181, 243);
+    text-align: center;
+}
+
+.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: rgb(143, 183, 169);
+    color: black;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+}
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease; opacity: 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.makanan{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.caviarblini{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(255, 215, 170);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.caviarblini:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.texassmokedbrisket{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(255, 215, 170);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.texassmokedbrisket:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.pokebowl{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(255, 215, 170);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.pokebowl:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.yogurtbowl{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(255, 215, 170);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.yogurtbowl:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.artisfavorit{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.taylorswift{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(255, 215, 170);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.taylorswift:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.oliviarodrigo{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(255, 215, 170);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.oliviarodrigo:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.noahkahan{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(255, 215, 170);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.noahkahan:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.gracieabrams{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(255, 215, 170);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.gracieabrams:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.albumfavorit{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+img{
+    padding: 10px;
+}
+div.speaknow{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(255, 215, 170);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.speaknow:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.taylorswift{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(255, 215, 170);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.taylorswift:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.guts{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(255, 215, 170);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.guts:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.stickseason{
+    width: 250px;
+    height: 280px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgb(255, 215, 170);
+    margin-bottom: 25px;
+    background-color: lemonchiffon;
+}
+div.stickseason:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.header,
+.topnav,
+.footer {
+    background-color: #6d3f82;
+    color: #ffffff;
+    border-color: #9f7ab1;
+}
+
+.topnav a {
+    color: #f7effa;
+}
+
+.topnav a:hover {
+    background-color: rgba(238, 220, 245, 0.20);
+    color: #ffffff;
+    border-bottom-color: #e5cdf0;
+}
+
+.footer {
+    margin-top: auto;
+    padding: 16px;
+    width: 100%;
+    border-top: 2px solid #9f7ab1;
+    text-align: center;
+    font-weight: 700;
+}
